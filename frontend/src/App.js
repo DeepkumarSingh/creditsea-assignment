@@ -1,0 +1,37 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { ThemeProvider, createTheme } from '@mui/material';
+import CssBaseline from '@mui/material/CssBaseline';
+import Navbar from './components/Navbar';
+import FileUpload from './components/FileUpload';
+import ReportList from './components/ReportList';
+import ReportDetail from './components/ReportDetail';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#1976d2',
+    },
+    secondary: {
+      main: '#dc004e',
+    },
+  },
+});
+
+function App() {
+  return (
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<FileUpload />} />
+          <Route path="/reports" element={<ReportList />} />
+          <Route path="/reports/:id" element={<ReportDetail />} />
+        </Routes>
+      </Router>
+    </ThemeProvider>
+  );
+}
+
+export default App;

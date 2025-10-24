@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CreditReport>
+    <PersonalInfo>
+        <Name>John Doe</Name>
+        <MobilePhone>1234567890</MobilePhone>
+        <PAN>ABCDE1234F</PAN>
+    </PersonalInfo>
+    <CreditScore>750</CreditScore>
+    <Summary>
+        <TotalAccounts>2</TotalAccounts>
+        <ActiveAccounts>1</ActiveAccounts>
+        <ClosedAccounts>1</ClosedAccounts>
+        <CurrentBalanceAmount>50000</CurrentBalanceAmount>
+        <SecuredAccountsAmount>40000</SecuredAccountsAmount>
+        <UnsecuredAccountsAmount>10000</UnsecuredAccountsAmount>
+        <LastSevenDaysCreditEnquiries>0</LastSevenDaysCreditEnquiries>
+    </Summary>
+    <CreditAccounts>
+        <Account>
+            <CreditCardNumber>4111111111111111</CreditCardNumber>
+            <Bank>Test Bank</Bank>
+            <Address>
+                <Street>123 Test Street</Street>
+                <City>Test City</City>
+                <State>Test State</State>
+                <Pincode>123456</Pincode>
+            </Address>
+            <AccountNumber>123456789</AccountNumber>
+            <AmountOverdue>0</AmountOverdue>
+            <CurrentBalance>50000</CurrentBalance>
+        </Account>
+    </CreditAccounts>
+    <FileName>sample.xml</FileName>
+</CreditReport>
