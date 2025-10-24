@@ -22,16 +22,16 @@ A full-stack MERN application that processes XML credit report data from Experia
 
 ```
 creditsea/
-├── backend/              # Express backend
-│   ├── controllers/      # Route controllers
-│   ├── middleware/       # Express middleware
-│   ├── models/          # Mongoose models
-│   ├── routes/          # API routes
-│   └── utils/           # Utility functions
-└── frontend/            # React frontend
-    ├── public/          # Static files
-    └── src/             # React source code
-        └── components/  # React components
+├── backend/              <- Express backend
+│   ├── controllers/      <- Route controllers
+│   ├── middleware/       <- Express middleware
+│   ├── models/          <- Mongoose models
+│   ├── routes/          <- API routes
+│   └── utils/           <- Utility functions
+└── frontend/            <- React frontend
+    ├── public/          <- Static files
+    └── src/             <- React source code
+        └── components/  <- React components
 ```
 
 ## Getting Started
@@ -99,8 +99,4 @@ npm test
 
 ## Author
 
-[Your Name]
-
-## License
-
-This project is private and confidential.
+[Deep Kumar]
