@@ -40,11 +40,15 @@ const FileUpload = () => {
 
     try {
       setLoading(true);
-      const response = await axios.post('http://localhost:5000/api/upload', formData, {
-        headers: {
-          'Content-Type': 'multipart/form-data',
-        },
-      });
+      const response = await axios.post(
+        process.env.REACT_APP_API_URL + 'api/upload',
+        formData,
+        {
+          headers: {
+            'Content-Type': 'multipart/form-data',
+          },
+        }
+      );
 
       if (response.data.reportId) {
         navigate(`/reports/${response.data.reportId}`);

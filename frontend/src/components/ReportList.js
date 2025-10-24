@@ -25,7 +25,7 @@ const ReportList = () => {
   useEffect(() => {
     const fetchReports = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/reports');
+  const response = await axios.get(process.env.REACT_APP_API_URL + 'api/reports');
         setReports(response.data);
       } catch (err) {
         setError(err.response?.data?.error || 'Error fetching reports');
