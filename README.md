@@ -99,4 +99,4 @@ npm test
 
 ## Author
 
-[Deep Kumar]
+**Deep Kumar**
