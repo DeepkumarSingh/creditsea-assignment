@@ -69,7 +69,7 @@ creditsea/
     or
    Simply connect with your mongodb atlas database as connection string:
    ```
-   mongodb+srv://<username>:<password>@cluster0.8y4dfjj.mongodb.net/?appName=Cluster0
+   mongodb+srv://<username>:<password>@<cluster-name>.<cluster-id>.mongodb.net/<database-name>?retryWrites=true&w=majority
    ```
 
 ### Running the Application
